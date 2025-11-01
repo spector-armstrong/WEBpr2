@@ -20,5 +20,16 @@ header.textContent = "My ToDo List";
 header.style.fontFamily = "Barrio";
 header.style.fontSize = "120px";
 header.style.color = "#101b32";
-
 insideBlock.appendChild(header)
+
+const inputForm = document.createElement('input');
+inputForm.setAttribute('type', 'text');
+inputForm.setAttribute('class', 'input-form');
+inputForm.setAttribute('id', 'input');
+inputForm.setAttribute('placeholder', 'Add a task');
+inputForm.style.width = "40%";
+inputForm.style.height = "10%"
+inputForm.style.fontSize = "36px"
+
+insideBlock.appendChild(inputForm)
+
