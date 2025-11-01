@@ -20,7 +20,7 @@ header.textContent = "My ToDo List";
 header.style.fontFamily = "Barrio";
 header.style.fontSize = "120px";
 header.style.color = "#101b32";
-insideBlock.appendChild(header)
+insideBlock.appendChild(header);
 
 const inputForm = document.createElement('input');
 inputForm.setAttribute('type', 'text');
@@ -28,8 +28,13 @@ inputForm.setAttribute('class', 'input-form');
 inputForm.setAttribute('id', 'input');
 inputForm.setAttribute('placeholder', 'Add a task');
 inputForm.style.width = "40%";
-inputForm.style.height = "10%"
-inputForm.style.fontSize = "36px"
+inputForm.style.height = "10%";
+inputForm.style.fontSize = "36px";
+insideBlock.appendChild(inputForm);
 
-insideBlock.appendChild(inputForm)
+const inputButton = document.createElement('input');
+inputButton.setAttribute('type', 'submit');
+inputButton.setAttribute('class', 'btn');
+inputButton.setAttribute('id', 'btn');
 
+inputForm.innerHTML = `<span onclick="func" class="btn">Add</span>`
