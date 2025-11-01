@@ -13,3 +13,12 @@ insideBlock.style.width = "100vw";
 insideBlock.style.margin = "3% 3%";
 insideBlock.style.borderRadius = "25px"
 background.appendChild(insideBlock);
+
+const header = document.createElement('h1');
+header.setAttribute('class', 'header');
+header.textContent = "My ToDo List";
+header.style.fontFamily = "Barrio";
+header.style.fontSize = "120px";
+header.style.color = "#101b32";
+
+insideBlock.appendChild(header)
